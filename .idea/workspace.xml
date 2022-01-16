@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="369e783a-eb2c-4a0b-8097-036a1cf7ad34" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="22xEqO32OCCWP7x9PJZdrpdmioR" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2" />
+      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\img\hero" />
+      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\img\gallery" />
+      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\css" />
+      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\img" />
+      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\fonts" />
+      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\img\gallery" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="369e783a-eb2c-4a0b-8097-036a1cf7ad34" name="Default Changelist" comment="" />
+      <created>1640771029200</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640771029200</updated>
+      <workItem from="1640771040539" duration="7088000" />
+      <workItem from="1641082849313" duration="4927000" />
+      <workItem from="1641088638609" duration="2138000" />
+      <workItem from="1641162420577" duration="104000" />
+      <workItem from="1641311435251" duration="6523000" />
+      <workItem from="1641515136705" duration="16404000" />
+      <workItem from="1641579928793" duration="2425000" />
+      <workItem from="1641601503671" duration="2237000" />
+      <workItem from="1641666304734" duration="18254000" />
+      <workItem from="1641746110206" duration="2775000" />
+      <workItem from="1641865861090" duration="291000" />
+      <workItem from="1641868607763" duration="12971000" />
+      <workItem from="1641968489094" duration="59455000" />
+      <workItem from="1642306177620" duration="7924000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
