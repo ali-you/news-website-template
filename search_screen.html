@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Magazine News</title>
+    <title>Search</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/new-news-icon.png">
@@ -79,79 +79,12 @@
 <main>
 
 
-
-
     <section class="tranding-area " style="margin-top: 70px">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-tittle mb-30 d-flex align-items-center justify-content-between">
-                        <h2>Search word</h2>
-                    </div>
-                </div>
-            </div>
             <div class="row justify-content-between">
-                <div class="col-xl-8 col-lg-8 col-md-8">
+                <div class="col-xl-8 col-lg-8 col-md-8" id="category-news-wrapper">
 
-                    <div class="whats-right-single mb-40">
-                        <div class="whats-right-img">
-                            <a href="news_details.html"><img
-                                    src="assets/img/gallery/xwhats_right_img1.jpg.pagespeed.ic.FJ-uCSOJ74.webp" alt=""></a>
-                        </div>
-                        <div class="whats-right-cap">
-                            <span>Travel</span>
-                            <h4><a href="news_details.html">The loss is not all that surprising</a></h4>
-                            <p>12 Nov 2020 I by <a href="#">Jack Miller</a></p>
-                        </div>
-                    </div>
 
-                    <div class="whats-right-single mb-40">
-                        <div class="whats-right-img">
-                            <a href="news_details.html"><img
-                                    src="assets/img/gallery/xwhats_right_img2.jpg.pagespeed.ic.qLffu61H7j.webp" alt=""></a>
-                        </div>
-                        <div class="whats-right-cap">
-                            <span>Travel</span>
-                            <h4><a href="news_details.html">The loss is not all that surprising</a></h4>
-                            <p>12 Nov 2020 I by <a href="#">Jack Miller</a></p>
-                        </div>
-                    </div>
-
-                    <div class="whats-right-single mb-40">
-                        <div class="whats-right-img">
-                            <a href="news_details.html"><img
-                                    src="assets/img/gallery/xwhats_right_img3.jpg.pagespeed.ic.a94s8k4BcJ.webp" alt=""></a>
-                        </div>
-                        <div class="whats-right-cap">
-                            <span>Travel</span>
-                            <h4><a href="news_details.html">The loss is not all that surprising</a></h4>
-                            <p>12 Nov 2020 I by <a href="#">Jack Miller</a></p>
-                        </div>
-                    </div>
-
-                    <div class="whats-right-single mb-40">
-                        <div class="whats-right-img">
-                            <a href="news_details.html"><img
-                                    src="assets/img/gallery/xwhats_right_img1.jpg.pagespeed.ic.FJ-uCSOJ74.webp" alt=""></a>
-                        </div>
-                        <div class="whats-right-cap">
-                            <span>Travel</span>
-                            <h4><a href="news_details.html">The loss is not all that surprising</a></h4>
-                            <p>12 Nov 2020 I by <a href="#">Jack Miller</a></p>
-                        </div>
-                    </div>
-
-                    <div class="whats-right-single mb-40">
-                        <div class="whats-right-img">
-                            <a href="news_details.html"><img
-                                    src="assets/img/gallery/xwhats_right_img2.jpg.pagespeed.ic.qLffu61H7j.webp" alt=""></a>
-                        </div>
-                        <div class="whats-right-cap">
-                            <span>Travel</span>
-                            <h4><a href="news_details.html">The loss is not all that surprising</a></h4>
-                            <p>12 Nov 2020 I by <a href="#">Jack Miller</a></p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -162,25 +95,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <div class="single-wrap d-flex justify-content-center">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-start " id="myDIV">
-                                <li class="page-item"><a class="page-link" href="#"><span class="ti-angle-left"></span></a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">01</a></li>
-                                <li class="page-item"><a class="page-link" href="#">02</a></li>
-                                <li class="page-item"><a class="page-link" href="#">03</a></li>
-                                <li class="page-item"><a class="page-link" href="#"><span class="ti-angle-right"></span></a>
-                                </li>
-                            </ul>
-                        </nav>
+                    <div class="single-wrap d-flex justify-content-center" id="category-pagination">
+                        <!--                        <nav aria-label="Page navigation example">-->
+                        <!--                            <ul class="pagination justify-content-start " id="myDIV">-->
+                        <!--                                <li class="page-item"><a class="page-link" href="#"><span class="ti-angle-left"></span></a>-->
+                        <!--                                </li>-->
+                        <!--                                <li class="page-item active"><a class="page-link" href="#">01</a></li>-->
+                        <!--                                <li class="page-item"><a class="page-link" href="#">02</a></li>-->
+                        <!--                                <li class="page-item"><a class="page-link" href="#">03</a></li>-->
+                        <!--                                <li class="page-item"><a class="page-link" href="#"><span class="ti-angle-right"></span></a>-->
+                        <!--                                </li>-->
+                        <!--                            </ul>-->
+                        <!--                        </nav>-->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
 
 
     <div class="instagram-area fix" style="margin-top: 20px">
@@ -337,7 +268,6 @@
         localStorage.setItem('token', guestToken);
 
 
-    document.cookie = "uuid=fweuofjweiofmfweio";
     console.log(document.cookie);
     console.log(getCookie('username'));
     console.log(isLogin());
@@ -357,6 +287,85 @@
 
 </script>
 
+<script>
+    window.onload = function () {
+        var url = document.location.href,
+            params = url.split('?')[1].split('&'),
+            data = {}, tmp;
+        for (var i = 0, l = params.length; i < l; i++) {
+            tmp = params[i].split('=');
+            data[tmp[0]] = tmp[1];
+        }
+        if (typeof data.page === 'undefined') data.page = '1';
+        console.log(data.search);
+        document.title = data.search;
+        let getNews = () => {
+            // fetch('https://news-websitex.herokuapp.com/api/news')
+            fetch('http://127.0.0.1:8000/api/search?page='+data.page+'&search='+data.search, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Token ' + localStorage.getItem('token')
+                },
+            })
+                .then(res => res.json())
+                .then(response => {
+                    console.log('success: ', response);
+                    buildNews(response, data.page, data.search);
+                });
+        };
+        getNews();
+    };
+
+    let buildNews = (news, currentPage, search) => {
+        let newsWrapper = document.getElementById('category-news-wrapper');
+
+
+        if (news.count > 10)
+            document.getElementById('category-pagination').innerHTML = `
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-start " id="myDIV">
+                    <li class="page-item"><a class="page-link"
+                        href="http://localhost:1587/new-website-template/search_screen.html?page=${parseInt(currentPage) === 1 ? currentPage : parseInt(currentPage)-1}&search=${search}">
+                        <span class="ti-angle-left"></span></a></li>
+                    <li class="page-item active"><a class="page-link">${currentPage}</a></li>
+                    <li class="page-item"><a class="page-link" href="http://localhost:1587/new-website-template/search_screen.html?page=${parseInt(currentPage)+1 <= Math.ceil(news.count/10) ? parseInt(currentPage)+1 : currentPage}&search=${search}">
+                        ${parseInt(currentPage)+1 > Math.ceil(news.count/10) ? '-' : parseInt(currentPage)+1}</a></li>
+                    <li class="page-item"><a class="page-link" href="http://localhost:1587/new-website-template/search_screen.html?page=${parseInt(currentPage)+2 <= Math.ceil(news.count/10) ? parseInt(currentPage)+2 : currentPage}&search=${search}">
+                        ${parseInt(currentPage)+2 > Math.ceil(news.count/10) ? '-' : parseInt(currentPage)+2}</a></li>
+                    <li class="page-item"><a class="page-link"
+                        href="http://localhost:1587/new-website-template/search_screen.html?page=${parseInt(currentPage) === Math.ceil(news.count/10) ? currentPage : parseInt(currentPage)+1}&search=${search}">
+                        <span class="ti-angle-right"></span></a>
+                    </li>
+                </ul>
+            </nav>`;
+
+
+        for (let i = 0; i < news.results.length; i++) {
+            let newsItem = news.results[i];
+
+            var date = new Date(newsItem.createDate);
+
+            let newsCard = `
+                <div class="whats-right-single mb-40">
+                    <div class="whats-right-img">
+                        <a href="news_details.html?id=${newsItem.newsID}""><img
+                                src="${newsItem.ImageUrl}" alt="" height="150" width="250" style="object-fit: cover"></a>
+                    </div>
+                    <div class="whats-right-cap">
+                        <h4><a href="news_details.html?id=${newsItem.newsID}">${newsItem.newsTitle}</a></h4>
+                        <span>${newsItem.viewCounter}  <i class="fas fa-eye"></i></span>
+                        <p>${date.getDate()} ${date.toLocaleString('default', {month: 'short'})} ${date.getFullYear()}  |  by
+                                <a href="profile.html?username=${newsItem.username}">${newsItem.author}</a></p>
+                        <p>${newsItem.newsID}</p>
+                    </div>
+                </div>`;
+
+            newsWrapper.innerHTML += newsCard;
+        }
+    };
+
+</script>
 
 
 <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>

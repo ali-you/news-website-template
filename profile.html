@@ -93,16 +93,8 @@
         <div class="row" id="news-wrapper1">
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="properties mb-30">
-                    <div class="properties-card">
-                        <div class="profile-img">
-                            <a href="news_details.html"><img
-                                    src="https://en.africatopsports.com/wp-content/uploads/2021/12/UEFA-Champions-league-1.jpg" width="100" alt=""></a>
-                        </div>
-                        <div class="properties-caption">
-                            <h3>Ali Yousefi</h3>
-                            <p>@username</p>
-                            <p>favorite category :<br>sport</p>
-                        </div>
+                    <div class="properties-card" id="profile-details-wrapper">
+
                     </div>
                 </div>
             </div>
@@ -115,7 +107,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row" id="news-wrapper">
+                    <div class="row" id="profile-news-wrapper">
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="properties mb-30">
                                 <div class="properties-card">
@@ -134,78 +126,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="properties mb-30">
-                                <div class="properties-card">
-                                    <div class="properties-img">
-                                        <a href="news_details.html"><img
-                                                src="assets/img/gallery/xtrending4.jpg.pagespeed.ic.uyfP7nzjyE.jpg" alt="" height="150" style="object-fit: cover"></a>
-                                        <div class="img-text">
-                                            <span>Food</span>
-                                        </div>
-                                    </div>
-                                    <div class="properties-caption">
-                                        <h4><a href="news_details.html">Class property employ ancho red multi level mansion.</a>
-                                        </h4>
-                                        <p>12 Nov 2020</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="properties mb-30">
-                                <div class="properties-card">
-                                    <div class="properties-img">
-                                        <a href="news_details.html"><img
-                                                src="assets/img/gallery/xtrending5.jpg.pagespeed.ic.PmcMJTelyI.jpg" alt="" height="150" style="object-fit: cover"></a>
-                                        <div class="img-text">
-                                            <span>Food</span>
-                                        </div>
-                                    </div>
-                                    <div class="properties-caption">
-                                        <h4><a href="news_details.html">Class property employ ancho red multi level mansion.</a>
-                                        </h4>
-                                        <p>12 Nov 2020</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="properties mb-30">
-                                <div class="properties-card">
-                                    <div class="properties-img">
-                                        <a href="news_details.html"><img
-                                                src="assets/img/gallery/xtrending6.jpg.pagespeed.ic.sq3Z2AFpAW.jpg" alt="" height="150" style="object-fit: cover"></a>
-                                        <div class="img-text">
-                                            <span>Food</span>
-                                        </div>
-                                    </div>
-                                    <div class="properties-caption">
-                                        <h4><a href="news_details.html">Class property employ ancho red multi level mansion.</a>
-                                        </h4>
-                                        <p>12 Nov 2020</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="properties mb-30">
-                                <div class="properties-card">
-                                    <div class="properties-img">
-                                        <a href="news_details.html"><img
-                                                src="assets/img/gallery/xtrending6.jpg.pagespeed.ic.sq3Z2AFpAW.jpg" alt="" height="150" style="object-fit: cover"></a>
-                                        <div class="img-text">
-                                            <span>Food</span>
-                                        </div>
-                                    </div>
-                                    <div class="properties-caption">
-                                        <h4><a href="news_details.html">Class property employ ancho red multi level mansion.</a>
-                                        </h4>
-                                        <p>12 Nov 2020</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+
 
                     </div>
                 </section>
@@ -387,14 +309,15 @@
             tmp = params[i].split('=');
             data[tmp[0]] = tmp[1];
         }
+        document.title = data.username;
         console.log("fuck   " + data.name);
         let getNews = () => {
             // fetch('https://news-websitex.herokuapp.com/api/news')
-            fetch('http://127.0.0.1:8000/api/newsbydate?page=1&page_size=6&search='+data.name, {
+            fetch('http://127.0.0.1:8000/api/getnewsbyusername/'+data.username, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Token 50e54843e2edff9a6b6711a585217717603cc6cd'
+                    'Authorization': 'Token '+ localStorage.getItem('token')
                 },
             })
                 .then(res => res.json())
@@ -404,31 +327,52 @@
                 });
         };
         getNews();
+
+        let getProfile = () => {
+            // fetch('https://news-websitex.herokuapp.com/api/news')
+            fetch('http://127.0.0.1:8000/api/getprofilebyusername/'+data.username, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Token '+ localStorage.getItem('token')
+                },
+            })
+                .then(res => res.json())
+                .then(response => {
+                    console.log('success: ', response);
+                    buildProfile(response, data.username);
+                });
+        };
+        getProfile();
+
     };
 
 
 
     let buildNews = (news) => {
-        let newsWrapper = document.getElementById('news-wrapper');
+        let newsWrapper = document.getElementById('profile-news-wrapper');
 
         for (let i = 0; i < news.results.length; i++) {
             let newsItem = news.results[i];
 
+            var date = new Date(newsItem.createDate);
 
             let newsCard = `<div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="properties mb-30">
                         <div class="properties-card">
                             <div class="properties-img">
-                                <a href="news_details.html"><img
+                                <a href="news_details.html?id=${newsItem.newsID}"><img
                                         src="${newsItem.ImageUrl}" alt=""></a>
                                 <div class="img-text">
                                     <span style="background: ${categoryColor(newsItem.newsClass)}">${newsItem.newsClass}</span>
+                                    <span style="background: #56675a">${newsItem.viewCounter}  <i class="fas fa-eye"></i></span>
                                 </div>
                             </div>
                             <div class="properties-caption">
-                                <h3><a href="news_details.html">${newsItem.newsTitle}</a>
+                                <h3><a href="news_details.html?id=${newsItem.newsID}">${newsItem.newsTitle}</a>
                                 </h3>
-                                <p>12 Nov 2020 I by <a href="#">Jack Miller</a></p>
+                                <p>${date.getDate()} ${date.toLocaleString('default', {month: 'short'})} ${date.getFullYear()}</p>
+                                <p style="font-size: xx-small">${newsItem.newsID}</p>
                             </div>
                         </div>
                     </div>
@@ -438,6 +382,35 @@
 
 
         }
+
+
+    };
+
+    let buildProfile = (news, username) => {
+        let newsWrapper = document.getElementById('profile-details-wrapper');
+
+            let newsItem = news;
+
+            var joinDate = new Date(newsItem.date_joined);
+            var lastLogin = new Date(newsItem.last_login);
+
+            let newsCard = `
+                <div class="profile-img">
+                    <a href="news_details.html"><img
+                            src="https://en.africatopsports.com/wp-content/uploads/2021/12/UEFA-Champions-league-1.jpg" width="100" alt=""></a>
+                </div>
+                <div class="properties-caption">
+                    <h3>${newsItem.first_name} ${newsItem.last_name}</h3>
+                    <p>@${username}</p>
+                    <p>favorite category :<br>${newsItem.userCategory}</p>
+                    <p>join date :<br>${joinDate.getDate()} ${joinDate.toLocaleString('default', {month: 'short'})} ${joinDate.getFullYear()}</p>
+                    <p>last online :<br>${lastLogin.getDate()} ${lastLogin.toLocaleString('default', {month: 'short'})} ${lastLogin.getFullYear()} ${lastLogin.toLocaleTimeString()}</p>
+                </div>`;
+
+            newsWrapper.innerHTML += newsCard;
+
+
+
 
 
     };

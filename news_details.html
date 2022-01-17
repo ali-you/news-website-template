@@ -376,6 +376,21 @@
                 });
         };
         getNews();
+        let increaseVisit = () => {
+            // fetch('https://news-websitex.herokuapp.com/api/news')
+            fetch('http://127.0.0.1:8000/api/newsvisited/' + data.id, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Token ' + localStorage.getItem('token')
+                },
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log('success: ', data);
+                });
+        };
+        increaseVisit();
     };
 
     let buildNews = (news) => {
@@ -384,30 +399,29 @@
         let newsItem = news[0];
         document.title = newsItem.newsTitle;
 
-            let newsCard = `
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="details-img mb-40">
-                        <img class="img-fluid"
-                             src="${newsItem.ImageUrl}">
+        let newsCard = `
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="details-img mb-40">
+                            <img class="img-fluid"
+                                 src="${newsItem.ImageUrl}">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="about-details-cap">
-                        <h2>${newsItem.newsTitle}</h2>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="about-details-cap">
+                            <h2>${newsItem.newsTitle}</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="about-details-cap">
+                            <p class="mb-30">${newsItem.newsBody}</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-10">
-                    <div class="about-details-cap">
-                        <p class="mb-30">${newsItem.newsBody}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-`;
+            </div>`;
 
         newsWrapper.innerHTML += newsCard;
 

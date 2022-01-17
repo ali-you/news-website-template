@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="369e783a-eb2c-4a0b-8097-036a1cf7ad34" name="Default Changelist" comment="" />
+    <list default="true" id="369e783a-eb2c-4a0b-8097-036a1cf7ad34" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Ali-Yousefi_resume1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/news_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search_screen.html" beforeDir="false" afterPath="$PROJECT_DIR$/search_screen.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,25 +27,31 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="22xEqO32OCCWP7x9PJZdrpdmioR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2" />
+      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\img" />
+      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\fonts" />
+      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\img\gallery" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2" />
       <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\img\hero" />
       <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\img\gallery" />
       <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\css" />
       <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\js" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\img" />
-      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\fonts" />
-      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\img\gallery" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -73,11 +89,22 @@
       <workItem from="1641865861090" duration="291000" />
       <workItem from="1641868607763" duration="12971000" />
       <workItem from="1641968489094" duration="59455000" />
-      <workItem from="1642306177620" duration="7924000" />
+      <workItem from="1642306177620" duration="43947000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
