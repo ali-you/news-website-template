@@ -350,11 +350,11 @@
                 <div class="whats-right-single mb-40">
                     <div class="whats-right-img">
                         <a href="news_details.html?id=${newsItem.newsID}""><img
-                                src="${newsItem.ImageUrl}" alt="" height="150" width="250" style="object-fit: cover"></a>
+                                src="${newsItem.imageUrl}" alt="" height="150" width="250" style="object-fit: cover"></a>
                     </div>
                     <div class="whats-right-cap">
                         <h4><a href="news_details.html?id=${newsItem.newsID}">${newsItem.newsTitle}</a></h4>
-                        <span>${newsItem.viewCounter}  <i class="fas fa-eye"></i></span>
+                        <span>${newsItem.newsClass} ${newsItem.viewCounter}  <i class="fas fa-eye"></i></span>
                         <p>${date.getDate()} ${date.toLocaleString('default', {month: 'short'})} ${date.getFullYear()}  |  by
                                 <a href="profile.html?username=${newsItem.username}">${newsItem.author}</a></p>
                         <p>${newsItem.newsID}</p>
