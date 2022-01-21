@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Magazine News</title>
+    <title>Setting</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/new-news-icon.png">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
     <div class="header-area main-header">
         <div class="header-top">
             <div class=" row col-xl-12 d-flex justify-content-between align-items-center">
-                <div class="header-info-left ">
+                <div class="header-info-left">
                     <div class="header-social d-none d-sm-block" style="margin-left: 50px">
                         <a href="#"><i class="fa fa-facebook-f"></i></a>
                         <a href="#"><i class="fa fa-instagram"></i></a>
@@ -35,10 +35,10 @@
                 <div class="header-info-right d-flex align-items-center">
                     <ul id="login_state">
                         <li>
-                            <form class="search-form" action="#">
+                            <form class="search-form" action="search_screen.html">
                                 <i class="fa fa-search"></i>
                                 <input type="search" class="form-control" placeholder="Search Here"
-                                       title="Search here">
+                                       title="Search here" name="search">
                             </form>
                         </li>
                     </ul>
@@ -59,11 +59,11 @@
                         <nav>
                             <ul id="navigation">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="category.html">Politics</a></li>
-                                <li><a href="category.html">Health</a></li>
-                                <li><a href="category.html">Economics</a></li>
-                                <li><a href="category.html">Sport</a></li>
-                                <li><a href="category.html">Technology</a></li>
+                                <li><a href="category.html?category=Politics">Politics</a></li>
+                                <li><a href="category.html?category=Health">Health</a></li>
+                                <li><a href="category.html?category=Economics">Economics</a></li>
+                                <li><a href="category.html?category=Sport">Sport</a></li>
+                                <li><a href="category.html?category=Technology">Technology</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -91,9 +91,6 @@
                                         <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab"
                                            href="#nav-Profile" role="tab" aria-controls="nav-home"
                                            aria-selected="true">Profile</a>
-                                        <a class="nav-item nav-link" id="nav-account-tab" data-toggle="tab"
-                                           href="#nav-Account" role="tab" aria-controls="nav-profile"
-                                           aria-selected="false">Account</a>
                                         <a class="nav-item nav-link" id="nav-appearance-tab" data-toggle="tab"
                                            href="#nav-Appearance" role="tab" aria-controls="nav-contact"
                                            aria-selected="false">Appearance</a>
@@ -123,43 +120,43 @@
                                                             <div class="input-box">
 
 
-                                                                <div class="tranding-area">
-                                                                    <div class="col-lg-3 col-md-6 col-sm-12">
-                                                                        <div class="properties mb-30">
-                                                                            <div class="properties-card">
-                                                                                <div class="profile-img">
-                                                                                    <a href="news_details.html"><img
-                                                                                            src="https://en.africatopsports.com/wp-content/uploads/2021/12/UEFA-Champions-league-1.jpg" width="100" alt=""></a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="single-input-fields">
+                                                                    <label>Image URL</label>
+                                                                    <input type="url" placeholder="Enter news image url"
+                                                                           id="setting-image">
                                                                 </div>
 
                                                                 <div class="single-input-fields">
                                                                     <label>Bio</label>
                                                                     <input type="text" placeholder="Enter your bio"
-                                                                           id="bio">
+                                                                           id="setting-bio">
                                                                 </div>
 
+
                                                                 <div class="single-element-widget mt-30 single-input-fields">
-                                                                    <label class="mb-30">News Category</label>
-                                                                    <div class="default-select" id="default-select">
-                                                                        <select>
-                                                                            <option value=" 1">Politics</option>
-                                                                            <option value="1">Health</option>
-                                                                            <option value="1">Economics</option>
-                                                                            <option value="1">Sport</option>
-                                                                            <option value="1">Technology</option>
-                                                                        </select>
+                                                                    <label class="mb-30">Favorite Category</label>
+                                                                    <div class="single-input-fields login-check">
+                                                                        <input type="checkbox" id="cat1" name="cat1"
+                                                                               value="Politics">
+                                                                        <label for="cat1">Politics</label>
+                                                                        <input type="checkbox" id="cat2" name="cat2"
+                                                                               value="Health">
+                                                                        <label for="cat2">Health</label>
+                                                                        <input type="checkbox" id="cat3" name="cat3"
+                                                                               value="Economics">
+                                                                        <label for="cat3">Economics</label>
+                                                                        <input type="checkbox" id="cat4" name="cat4"
+                                                                               value="Sport">
+                                                                        <label for="cat4">Sport</label>
+                                                                        <input type="checkbox" id="cat5" name="cat5"
+                                                                               value="Technology">
+                                                                        <label for="cat5">Technology</label>
                                                                     </div>
                                                                 </div>
                                                             </div>
 
-
-
                                                             <div class="register-footer">
-                                                                <button class="btn" onclick="registerAPI()">Save
+                                                                <button class="btn" onclick="editProfile()">Save
                                                                     changes
                                                                 </button>
                                                             </div>
@@ -172,76 +169,6 @@
 
                                 </div>
 
-                                <div class="tab-pane fade" id="nav-Account" role="tabpanel"
-                                     aria-labelledby="nav-account-tab">
-
-                                    <div class="col-xl-12 col-lg-12 justify-content-center align-items-center">
-                                        <div class="register-form-area">
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div class="col-xl-6 col-lg-7 col-md-10">
-                                                        <div class="register-form text-center">
-
-                                                            <div class="input-box">
-                                                                <div class="single-input-fields">
-                                                                    <label>first name</label>
-                                                                    <input type="text" placeholder="Enter first name"
-                                                                           id="firstName" style="margin: 0">
-                                                                    <p class="text-left" style="color: red"
-                                                                       id="firstName_err"></p>
-
-                                                                </div>
-                                                                <div class="single-input-fields">
-                                                                    <label>last name</label>
-                                                                    <input type="text" placeholder="Enter last name"
-                                                                           id="lastName" style="margin: 0">
-                                                                    <p class="text-left" style="color: red"
-                                                                       id="lastName_err"></p>
-
-                                                                </div>
-                                                                <div class="single-input-fields">
-                                                                    <label>username</label>
-                                                                    <input type="text" placeholder="Enter username"
-                                                                           id="username" style="margin: 0">
-                                                                    <p class="text-left" style="color: red"
-                                                                       id="username_err"></p>
-                                                                </div>
-                                                                <div class="single-input-fields">
-                                                                    <label>Email Address</label>
-                                                                    <input type="email"
-                                                                           placeholder="Enter email address" id="email"
-                                                                           style="margin: 0">
-                                                                    <p class="text-left" style="color: red"
-                                                                       id="email_err"></p>
-                                                                </div>
-                                                                <div class="single-input-fields">
-                                                                    <label>Password</label>
-                                                                    <input type="password" placeholder="Enter Password"
-                                                                           id="password" style="margin: 0">
-                                                                    <p class="text-left" style="color: red"
-                                                                       id="password_err"></p>
-                                                                </div>
-                                                                <div class="single-input-fields">
-                                                                    <label>Confirm Password</label>
-                                                                    <input type="password"
-                                                                           placeholder="Confirm Password"
-                                                                           id="re_password">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="register-footer">
-                                                                <button class="btn" onclick="registerAPI()">Save
-                                                                    changes
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
 
                                 <div class="tab-pane fade" id="nav-Appearance" role="tabpanel"
                                      aria-labelledby="nav-appearance-tab">
@@ -255,7 +182,6 @@
 
 
                                                             <div class="input-box">
-
 
 
                                                                 <div class="single-input-fields">
@@ -280,7 +206,9 @@
                                                                                 class="radio-label pl-0 pr-0 pt-0 pb-2 overflow-hidden hx_theme-toggle width-full"
                                                                                 for="option-light"
                                                                         >
-                                                                            <img alt="" class="d-block border-bottom mb-2 width-full" src="https://github.githubassets.com/images/modules/settings/color_modes/light_preview.svg" />
+                                                                            <img alt=""
+                                                                                 class="d-block border-bottom mb-2 width-full"
+                                                                                 src="https://github.githubassets.com/images/modules/settings/color_modes/light_preview.svg"/>
                                                                             <span class="ml-5">Light default</span>
                                                                         </label>
                                                                     </div>
@@ -302,7 +230,9 @@
                                                                                 class="radio-label pl-0 pr-0 pt-0 pb-2 overflow-hidden hx_theme-toggle width-full"
                                                                                 for="option-light_high_contrast"
                                                                         >
-                                                                            <img alt="" class="d-block border-bottom mb-2 width-full" src="https://github.githubassets.com/images/modules/settings/color_modes/light_high_contrast_preview.svg" />
+                                                                            <img alt=""
+                                                                                 class="d-block border-bottom mb-2 width-full"
+                                                                                 src="https://github.githubassets.com/images/modules/settings/color_modes/light_high_contrast_preview.svg"/>
                                                                             <span class="ml-5">Light high contrast</span>
                                                                         </label>
                                                                     </div>
@@ -324,7 +254,9 @@
                                                                                 class="radio-label pl-0 pr-0 pt-0 pb-2 overflow-hidden hx_theme-toggle width-full"
                                                                                 for="option-dark"
                                                                         >
-                                                                            <img alt="" class="d-block border-bottom mb-2 width-full" src="https://github.githubassets.com/images/modules/settings/color_modes/dark_preview.svg" />
+                                                                            <img alt=""
+                                                                                 class="d-block border-bottom mb-2 width-full"
+                                                                                 src="https://github.githubassets.com/images/modules/settings/color_modes/dark_preview.svg"/>
                                                                             <span class="ml-5">Dark default</span>
                                                                         </label>
                                                                     </div>
@@ -346,7 +278,9 @@
                                                                                 class="radio-label pl-0 pr-0 pt-0 pb-2 overflow-hidden hx_theme-toggle width-full"
                                                                                 for="option-dark_high_contrast"
                                                                         >
-                                                                            <img alt="" class="d-block border-bottom mb-2 width-full" src="https://github.githubassets.com/images/modules/settings/color_modes/dark_high_contrast_preview.svg" />
+                                                                            <img alt=""
+                                                                                 class="d-block border-bottom mb-2 width-full"
+                                                                                 src="https://github.githubassets.com/images/modules/settings/color_modes/dark_high_contrast_preview.svg"/>
                                                                             <span class="ml-5">Dark high contrast</span>
                                                                         </label>
                                                                     </div>
@@ -368,37 +302,37 @@
                                                                                 class="radio-label pl-0 pr-0 pt-0 pb-2 overflow-hidden hx_theme-toggle width-full"
                                                                                 for="option-dark_dimmed"
                                                                         >
-                                                                            <img alt="" class="d-block border-bottom mb-2 width-full" src="https://github.githubassets.com/images/modules/settings/color_modes/dark_dimmed_preview.svg" />
+                                                                            <img alt=""
+                                                                                 class="d-block border-bottom mb-2 width-full"
+                                                                                 src="https://github.githubassets.com/images/modules/settings/color_modes/dark_dimmed_preview.svg"/>
                                                                             <span class="ml-5">Dark dimmed</span>
                                                                         </label>
                                                                     </div>
                                                                 </div>
 
 
-                                                                </div>
-
                                                             </div>
 
+                                                        </div>
 
 
-                                                            <div class="register-footer">
-                                                                <button class="btn" onclick="registerAPI()">Save
-                                                                    changes
-                                                                </button>
-                                                            </div>
+                                                        <div class="register-footer">
+                                                            <button class="btn" onclick="registerAPI()">Save
+                                                                changes
+                                                            </button>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
-
 
                             </div>
 
+
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -420,8 +354,7 @@
                             </div>
                             <div class="footer-tittle">
                                 <div class="footer-pera">
-                                    <p>Heaven fruitful doesn't over lesser days appear creeping seasons so behold
-                                        bearing days open</p>
+                                    <p>Science is a beautiful gift to humanity We should not distort it</p>
                                 </div>
                             </div>
                             <div class="footer-social">
@@ -453,11 +386,11 @@
                         <div class="footer-tittle">
                             <h4>Top Categories</h4>
                             <ul>
-                                <li><a href="#">Politics</a></li>
-                                <li><a href="#"> Health</a></li>
-                                <li><a href="#">Economics</a></li>
-                                <li><a href="#">Sport</a></li>
-                                <li><a href="#">Technology</a></li>
+                                <li><a href="category.html?category=Politics">Politics</a></li>
+                                <li><a href="category.html?category=Health"> Health</a></li>
+                                <li><a href="category.html?category=Economics">Economics</a></li>
+                                <li><a href="category.html?category=Sport">Sport</a></li>
+                                <li><a href="category.html?category=Technology">Technology</a></li>
                             </ul>
                         </div>
                     </div>
@@ -472,7 +405,6 @@
                         <div class="footer-form">
                             <div id="mc_embed_signup">
                                 <form target="_blank"
-                                      action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
                                       class="subscribe_form relative mail_part" novalidate>
                                     <input type="email" name="EMAIL" id="newsletter-form-email"
                                            placeholder="  Enter your email">
@@ -513,23 +445,16 @@
 </div>
 
 
-<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-<script src="assets/js/popper.min.js+bootstrap.min.js.pagespeed.jc.-Z5m6ljAND.js"></script>
-<script type="text/javascript" src="api.js"></script>
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="js/vendor/jquery-1.12.4.min.js"></script>
+<script src="js/popper.min.js+bootstrap.min.js.pagespeed.jc.-Z5m6ljAND.js"></script>
+<script type="text/javascript" src="js/api.js"></script>
+<script type="text/javascript" src="js/customAlert.js"></script>
 <script>
     if (localStorage.getItem('token') === null)
         localStorage.setItem('token', '');
     if (localStorage.getItem('token') === '')
         localStorage.setItem('token', guestToken);
-
-
-    document.cookie = "uuid=fweuofjweiofmfweio";
-    console.log(document.cookie);
-    console.log(getCookie('username'));
-    console.log(isLogin());
-
-    // changeButton();
 
     if (isLogin()) {
         document.getElementById('login_state').innerHTML += `<li><a class="header-btn">${getCookie('username')}</a>
@@ -543,13 +468,125 @@
     } else document.getElementById('login_state').innerHTML += `<li><a href="login.html" class="header-btn" id="login_button">Sign in</a></li>`
 
 </script>
+<script>
+    let getProfile = () => {
+        // fetch('https://news-websitex.herokuapp.com/api/news')
+        fetch('http://127.0.0.1:8000/api/getprofilebyusername/' + getCookie('username'), {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Token ' + localStorage.getItem('token')
+            },
+        })
+            .then(res => res.json())
+            .then(response => {
+                console.log('success: ', response);
+                buildProfile(response);
+            });
+    };
+    getProfile();
+    let buildProfile = (news) => {
+        document.getElementById('setting-bio').value = news.bio;
+        document.getElementById('setting-image').value = news.imageUrl;
+        var cat1 = document.getElementById('cat1');
+        var cat2 = document.getElementById('cat2');
+        var cat3 = document.getElementById('cat3');
+        var cat4 = document.getElementById('cat4');
+        var cat5 = document.getElementById('cat5');
+        var category = news.userCategory.split(',');
+
+        category.forEach(function (value) {
+            if (value === cat1.value)
+                cat1.checked = true;
+            if (value === cat2.value)
+                cat2.checked = true;
+            if (value === cat3.value)
+                cat3.checked = true;
+            if (value === cat4.value)
+                cat4.checked = true;
+            if (value === cat5.value)
+                cat5.checked = true;
+        });
+
+        document.getElementById('setting-bio').value = news.bio;
+
+    };
+</script>
+<script>
+    async function editProfile() {
+
+        const imageUrl = document.getElementById('setting-image').value === '' ?
+            'https://www.gravatar.com/avatar/1abe5daca3f11ecbdae87e302f5cf00f?s=256&d=identicon&r=PG&f=1'
+            : document.getElementById('setting-image').value;
+        const bio = document.getElementById('setting-bio').value;
+        var category = [];
+        var cat1 = document.getElementById('cat1');
+        var cat2 = document.getElementById('cat2');
+        var cat3 = document.getElementById('cat3');
+        var cat4 = document.getElementById('cat4');
+        var cat5 = document.getElementById('cat5');
+        if (cat1.checked === true)
+            category.push(cat1.value);
+        if (cat2.checked === true)
+            category.push(cat2.value);
+        if (cat3.checked === true)
+            category.push(cat3.value);
+        if (cat4.checked === true)
+            category.push(cat4.value);
+        if (cat5.checked === true)
+            category.push(cat5.value);
+        let myBody =
+            {
+                "userCategory": category.toString(),
+                "imageUrl": imageUrl,
+                "bio": bio,
+            };
+        let
+            statusCode;
+        const response = await fetch(/*'https://news-websitex.herokuapp.com/api/user'*/'http://127.0.0.1:8000/api/profile/' + getCookie('uid'), {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Token ' + localStorage.getItem('token')
+            },
+            body: JSON.stringify(myBody),
+        })
+            .then(function (res) {
+                    statusCode = res.status;
+                    return res.json();
+                }
+            )
+            .then(data => {
+                console.log('success: ', data);
+                console.log(statusCode.toString());
+                // if (statusCode === 400)
+                //     document.getElementById('addNewsTitle_err').innerHTML = data['newsTitle'];
+                //     document.getElementById('addNewsBody_err').innerHTML = data['newsBody'];
+                if (statusCode === 200) {
+                    document.cookie = "category=" + data['userCategory'];
+                    customAlertObj(
+                        "Success", //message
+                        "success", //type:info/warning/success/error
+                        "Profile edited successfully", //details
+                        5000 //duration
+                    );
+                }
+
+                // window.location.replace("login.html");
+            });
+    }
+
+    // const myJson = await response.json();
+    // console.log(myJson)
+
+</script>
 <script>eval(mod_pagespeed_aaYokwErtx);</script>
 <script>eval(mod_pagespeed_gMJAcNlmbI);</script>
 
-<script src="assets/js/owl.carousel.min.js+slick.min.js.pagespeed.jc.F6wXCct6U2.js"></script>
+<script src="js/owl.carousel.min.js+slick.min.js.pagespeed.jc.F6wXCct6U2.js"></script>
 <script>eval(mod_pagespeed_KlLvOZN8Fy);</script>
 <script>eval(mod_pagespeed_$TEYNsEnUF);</script>
-<script src="assets/js/lightslider.min.js+jquery.slicknav.min.js+wow.min.js+jquery.js"></script>
+<script src="js/lightslider.min.js+jquery.slicknav.min.js+wow.min.js+jquery.js"></script>
 <script>eval(mod_pagespeed_SsjX9wl8YK);</script>
 <script>eval(mod_pagespeed_FsFY_1b99X);</script>
 
@@ -558,7 +595,7 @@
 <script>eval(mod_pagespeed_ACR6aNIQJ0);</script>
 
 <script>eval(mod_pagespeed_l3DmqqKHpk);</script>
-<script src="assets/js/jquery.form.js+jquery.validate.min.js+mail-script.js+jquery.js"></script>
+<script src="js/jquery.form.js+jquery.validate.min.js+mail-script.js+jquery.js"></script>
 <script>eval(mod_pagespeed_Tz7N8H_GxJ);</script>
 <script>eval(mod_pagespeed_eCe2npfiIC);</script>
 <script>eval(mod_pagespeed_IEpshS3M$A);</script>
@@ -567,21 +604,5 @@
 <script>eval(mod_pagespeed_Xuk2NU2Nkf);</script>
 <script>eval(mod_pagespeed_$TGHfHB1G2);</script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'UA-23581568-13');
-</script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
-        integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
-        data-cf-beacon='{"rayId":"6c528afa4d1d4ea9","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.12.0","si":100}'
-        crossorigin="anonymous"></script>
 </body>
 </html>

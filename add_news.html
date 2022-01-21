@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Magazine News</title>
+    <title>Add News</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/new-news-icon.png">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
     <div class="header-area main-header">
         <div class="header-top">
             <div class=" row col-xl-12 d-flex justify-content-between align-items-center">
-                <div class="header-info-left ">
+                <div class="header-info-left">
                     <div class="header-social d-none d-sm-block" style="margin-left: 50px">
                         <a href="#"><i class="fa fa-facebook-f"></i></a>
                         <a href="#"><i class="fa fa-instagram"></i></a>
@@ -35,10 +35,10 @@
                 <div class="header-info-right d-flex align-items-center">
                     <ul id="login_state">
                         <li>
-                            <form class="search-form" action="#">
+                            <form class="search-form" action="search_screen.html">
                                 <i class="fa fa-search"></i>
                                 <input type="search" class="form-control" placeholder="Search Here"
-                                       title="Search here">
+                                       title="Search here" name="search">
                             </form>
                         </li>
                     </ul>
@@ -59,11 +59,11 @@
                         <nav>
                             <ul id="navigation">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="category.html">Politics</a></li>
-                                <li><a href="category.html">Health</a></li>
-                                <li><a href="category.html">Economics</a></li>
-                                <li><a href="category.html">Sport</a></li>
-                                <li><a href="category.html">Technology</a></li>
+                                <li><a href="category.html?category=Politics">Politics</a></li>
+                                <li><a href="category.html?category=Health">Health</a></li>
+                                <li><a href="category.html?category=Economics">Economics</a></li>
+                                <li><a href="category.html?category=Sport">Sport</a></li>
+                                <li><a href="category.html?category=Technology">Technology</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -126,7 +126,7 @@
                         </div>
 
                         <div class="register-footer">
-                            <button class="btn" onclick="addNews()">Submit</button>
+                            <button class="btn" onclick="addNews()" id="btn">Submit</button>
                         </div>
                     </div>
                 </div>
@@ -148,8 +148,7 @@
                             </div>
                             <div class="footer-tittle">
                                 <div class="footer-pera">
-                                    <p>Heaven fruitful doesn't over lesser days appear creeping seasons so behold
-                                        bearing days open</p>
+                                    <p>Science is a beautiful gift to humanity We should not distort it</p>
                                 </div>
                             </div>
                             <div class="footer-social">
@@ -181,11 +180,11 @@
                         <div class="footer-tittle">
                             <h4>Top Categories</h4>
                             <ul>
-                                <li><a href="#">Politics</a></li>
-                                <li><a href="#"> Health</a></li>
-                                <li><a href="#">Economics</a></li>
-                                <li><a href="#">Sport</a></li>
-                                <li><a href="#">Technology</a></li>
+                                <li><a href="category.html?category=Politics">Politics</a></li>
+                                <li><a href="category.html?category=Health"> Health</a></li>
+                                <li><a href="category.html?category=Economics">Economics</a></li>
+                                <li><a href="category.html?category=Sport">Sport</a></li>
+                                <li><a href="category.html?category=Technology">Technology</a></li>
                             </ul>
                         </div>
                     </div>
@@ -200,7 +199,6 @@
                         <div class="footer-form">
                             <div id="mc_embed_signup">
                                 <form target="_blank"
-                                      action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
                                       class="subscribe_form relative mail_part" novalidate>
                                     <input type="email" name="EMAIL" id="newsletter-form-email"
                                            placeholder="  Enter your email">
@@ -240,23 +238,16 @@
     <a title="Go to Top"> <i class="fa fa-arrow-up" style="color: white"></i></a>
 </div>
 
-<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-<script src="assets/js/popper.min.js+bootstrap.min.js.pagespeed.jc.-Z5m6ljAND.js"></script>
-<script type="text/javascript" src="api.js"></script>
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="js/vendor/jquery-1.12.4.min.js"></script>
+<script src="js/popper.min.js+bootstrap.min.js.pagespeed.jc.-Z5m6ljAND.js"></script>
+<script type="text/javascript" src="js/api.js"></script>
+<script type="text/javascript" src="js/customAlert.js"></script>
 <script>
     if (localStorage.getItem('token') === null)
         localStorage.setItem('token', '');
     if (localStorage.getItem('token') === '')
         localStorage.setItem('token', guestToken);
-
-
-    document.cookie = "uuid=fweuofjweiofmfweio";
-    console.log(document.cookie);
-    console.log(getCookie('username'));
-    console.log(isLogin());
-
-    // changeButton();
 
     if (isLogin()) {
         document.getElementById('login_state').innerHTML += `<li><a class="header-btn">${getCookie('username')}</a>
@@ -285,19 +276,28 @@
             document.getElementById('addNewsTitle_err').innerHTML = 'This field can\'t be empty';
         if (newsBody === '')
             document.getElementById('addNewsBody_err').innerHTML = 'This field can\'t be empty';
-        if (viewCounter === '' || viewCounter > 0)
+        if (viewCounter === '' || viewCounter < 0)
             viewCounter = 0;
-        if (newsTitle !=='' && newsBody !==''){
-            let myBody = {
-                "newsTitle": newsTitle,
-                "newsBody": newsBody,
-                "imageUrl": newsImage,
-                "viewCounter": viewCounter,
-                "newsClass": newsClass,
-                "userID": getCookie('uid')
-            };
+        if (newsTitle !== '' && newsBody !== '') {
+            let myBody = newsImage !== '' ?
+                {
+                    "newsTitle": newsTitle,
+                    "newsBody": newsBody,
+                    "imageUrl": newsImage,
+                    "viewCounter": viewCounter,
+                    "newsClass": newsClass,
+                    "userID": getCookie('uid')
+                } :
+                {
+                    "newsTitle": newsTitle,
+                    "newsBody": newsBody,
+                    "viewCounter": viewCounter,
+                    "newsClass": newsClass,
+                    "userID": getCookie('uid')
+                };
 
-            let statusCode;
+            let
+                statusCode;
             const response = await fetch(/*'https://news-websitex.herokuapp.com/api/user'*/'http://127.0.0.1:8000/api/addnews', {
                 method: 'POST',
                 headers: {
@@ -317,22 +317,43 @@
                     // if (statusCode === 400)
                     //     document.getElementById('addNewsTitle_err').innerHTML = data['newsTitle'];
                     //     document.getElementById('addNewsBody_err').innerHTML = data['newsBody'];
-                    if (statusCode === 201)
-                        alert("added");
-                        // window.location.replace("login.html");
+                    if (statusCode === 201) {
+
+                        document.getElementById('addNewsTitle').value = '';
+                        document.getElementById('addNewsBody').value = '';
+                        document.getElementById('addNewsImage').value = '';
+                        document.getElementById('addNewsView').value = '';
+                        customAlertObj(
+                            "Success", //message
+                            "success", //type:info/warning/success/error
+                            "News Created successfully", //details
+                            5000 //duration
+                        );
+                    }
+
+                    // window.location.replace("login.html");
                 });
         }
         // const myJson = await response.json();
         // console.log(myJson)
     }
+
+    // document.getElementById("btn").addEventListener("click", function () {
+    //     customAlertObj(
+    //         "I am a success message", //message
+    //         "success", //type:info/warning/success/error
+    //         "After 5 seconds it will be gone", //details
+    //         5000 //duration
+    //     );
+    // });
 </script>
 <script>eval(mod_pagespeed_aaYokwErtx);</script>
 <script>eval(mod_pagespeed_gMJAcNlmbI);</script>
 
-<script src="assets/js/owl.carousel.min.js+slick.min.js.pagespeed.jc.F6wXCct6U2.js"></script>
+<script src="js/owl.carousel.min.js+slick.min.js.pagespeed.jc.F6wXCct6U2.js"></script>
 <script>eval(mod_pagespeed_KlLvOZN8Fy);</script>
 <script>eval(mod_pagespeed_$TEYNsEnUF);</script>
-<script src="assets/js/lightslider.min.js+jquery.slicknav.min.js+wow.min.js+jquery.js"></script>
+<script src="js/lightslider.min.js+jquery.slicknav.min.js+wow.min.js+jquery.js"></script>
 <script>eval(mod_pagespeed_SsjX9wl8YK);</script>
 <script>eval(mod_pagespeed_FsFY_1b99X);</script>
 
@@ -341,7 +362,7 @@
 <script>eval(mod_pagespeed_ACR6aNIQJ0);</script>
 
 <script>eval(mod_pagespeed_l3DmqqKHpk);</script>
-<script src="assets/js/jquery.form.js+jquery.validate.min.js+mail-script.js+jquery.js"></script>
+<script src="js/jquery.form.js+jquery.validate.min.js+mail-script.js+jquery.js"></script>
 <script>eval(mod_pagespeed_Tz7N8H_GxJ);</script>
 <script>eval(mod_pagespeed_eCe2npfiIC);</script>
 <script>eval(mod_pagespeed_IEpshS3M$A);</script>
@@ -350,21 +371,5 @@
 <script>eval(mod_pagespeed_Xuk2NU2Nkf);</script>
 <script>eval(mod_pagespeed_$TGHfHB1G2);</script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'UA-23581568-13');
-</script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
-        integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
-        data-cf-beacon='{"rayId":"6c528afa4d1d4ea9","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.12.0","si":100}'
-        crossorigin="anonymous"></script>
 </body>
 </html>

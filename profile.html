@@ -8,9 +8,9 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/new-news-icon.png">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -40,7 +40,7 @@
                             <form class="search-form" action="search_screen.html">
                                 <i class="fa fa-search"></i>
                                 <input type="search" class="form-control" placeholder="Search Here"
-                                       title="Search here">
+                                       title="Search here" name="search">
                             </form>
                         </li>
                     </ul>
@@ -61,11 +61,11 @@
                         <nav>
                             <ul id="navigation">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="category.html">Politics</a></li>
-                                <li><a href="category.html">Health</a></li>
-                                <li><a href="category.html">Economics</a></li>
-                                <li><a href="category.html">Sport</a></li>
-                                <li><a href="category.html">Technology</a></li>
+                                <li><a href="category.html?category=Politics">Politics</a></li>
+                                <li><a href="category.html?category=Health">Health</a></li>
+                                <li><a href="category.html?category=Economics">Economics</a></li>
+                                <li><a href="category.html?category=Sport">Sport</a></li>
+                                <li><a href="category.html?category=Technology">Technology</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -84,9 +84,8 @@
     <section class="tranding-area section-padding container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="section-tittle mb-30 d-flex align-items-center justify-content-between">
+                <div class="section-tittle mb-30 d-flex align-items-center justify-content-between" id="edit-btn">
                     <h2>Profile</h2>
-                    <a href="#">Edit profile</a>
                 </div>
             </div>
         </div>
@@ -103,63 +102,42 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="section-tittle mb-30 d-flex align-items-center justify-content-between">
-                                <h3>Ali's News</h3>
+                                <h3>Profile News</h3>
                             </div>
                         </div>
                     </div>
                     <div class="row" id="profile-news-wrapper">
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="properties mb-30">
-                                <div class="properties-card">
-                                    <div class="properties-img">
-                                        <a href="news_details.html"><img
-                                                src="https://en.africatopsports.com/wp-content/uploads/2021/12/UEFA-Champions-league-1.jpg" alt="" height="150" style="object-fit: cover"></a>
-                                        <div class="img-text">
-                                            <span>Food</span>
-                                        </div>
-                                    </div>
-                                    <div class="properties-caption">
-                                        <h4><a href="news_details.html">Class property employ ancho red multi level mansion.</a>
-                                        </h4>
-                                        <p>12 Nov 2020</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
                     </div>
                 </section>
 
-                <div class="pagination-area text-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <div class="single-wrap d-flex justify-content-center">
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination justify-content-start " id="myDIV">
-                                            <li class="page-item"><a class="page-link" href="#"><span class="ti-angle-left"></span></a>
-                                            </li>
-                                            <li class="page-item active"><a class="page-link" href="#">01</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">02</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">03</a></li>
-                                            <li class="page-item"><a class="page-link" href="#"><span class="ti-angle-right"></span></a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!--                <div class="pagination-area text-center">-->
+<!--                    <div class="container">-->
+<!--                        <div class="row">-->
+<!--                            <div class="col-xl-12">-->
+<!--                                <div class="single-wrap d-flex justify-content-center">-->
+<!--                                    <nav aria-label="Page navigation example">-->
+<!--                                        <ul class="pagination justify-content-start " id="myDIV">-->
+<!--                                            <li class="page-item"><a class="page-link" href="#"><span-->
+<!--                                                    class="ti-angle-left"></span></a>-->
+<!--                                            </li>-->
+<!--                                            <li class="page-item active"><a class="page-link" href="#">01</a></li>-->
+<!--                                            <li class="page-item"><a class="page-link" href="#">02</a></li>-->
+<!--                                            <li class="page-item"><a class="page-link" href="#">03</a></li>-->
+<!--                                            <li class="page-item"><a class="page-link" href="#"><span-->
+<!--                                                    class="ti-angle-right"></span></a>-->
+<!--                                            </li>-->
+<!--                                        </ul>-->
+<!--                                    </nav>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
 
             </div>
 
         </div>
     </section>
-
-
 
 
 </main>
@@ -177,8 +155,7 @@
                             </div>
                             <div class="footer-tittle">
                                 <div class="footer-pera">
-                                    <p>Heaven fruitful doesn't over lesser days appear creeping seasons so behold
-                                        bearing days open</p>
+                                    <p>Science is a beautiful gift to humanity We should not distort it</p>
                                 </div>
                             </div>
                             <div class="footer-social">
@@ -210,11 +187,11 @@
                         <div class="footer-tittle">
                             <h4>Top Categories</h4>
                             <ul>
-                                <li><a href="#">Politics</a></li>
-                                <li><a href="#"> Health</a></li>
-                                <li><a href="#">Economics</a></li>
-                                <li><a href="#">Sport</a></li>
-                                <li><a href="#">Technology</a></li>
+                                <li><a href="category.html?category=Politics">Politics</a></li>
+                                <li><a href="category.html?category=Health"> Health</a></li>
+                                <li><a href="category.html?category=Economics">Economics</a></li>
+                                <li><a href="category.html?category=Sport">Sport</a></li>
+                                <li><a href="category.html?category=Technology">Technology</a></li>
                             </ul>
                         </div>
                     </div>
@@ -229,7 +206,6 @@
                         <div class="footer-form">
                             <div id="mc_embed_signup">
                                 <form target="_blank"
-                                      action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
                                       class="subscribe_form relative mail_part" novalidate>
                                     <input type="email" name="EMAIL" id="newsletter-form-email"
                                            placeholder="  Enter your email">
@@ -270,22 +246,14 @@
 </div>
 
 
-<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-<script type="text/javascript" src="api.js"></script>
+<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="js/vendor/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/api.js"></script>
 <script>
     if (localStorage.getItem('token') === null)
         localStorage.setItem('token', '');
     if (localStorage.getItem('token') === '')
         localStorage.setItem('token', guestToken);
-
-
-    document.cookie = "uuid=fweuofjweiofmfweio";
-    console.log(document.cookie);
-    console.log(getCookie('username'));
-    console.log(isLogin());
-
-    // changeButton();
 
     if (isLogin()) {
         document.getElementById('login_state').innerHTML += `<li><a class="header-btn">${getCookie('username')}</a>
@@ -310,31 +278,33 @@
             data[tmp[0]] = tmp[1];
         }
         document.title = data.username;
+        if (data.username === getCookie('username'))
+            document.getElementById('edit-btn').innerHTML += `<a href="setting.html">Edit profile</a>`;
         console.log("fuck   " + data.name);
         let getNews = () => {
             // fetch('https://news-websitex.herokuapp.com/api/news')
-            fetch('http://127.0.0.1:8000/api/getnewsbyusername/'+data.username, {
+            fetch('http://127.0.0.1:8000/api/getnewsbyusername/' + data.username, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Token '+ localStorage.getItem('token')
+                    'Authorization': 'Token ' + localStorage.getItem('token')
                 },
             })
                 .then(res => res.json())
-                .then(data => {
-                    console.log('success: ', data);
-                    buildNews(data);
+                .then(response => {
+                    console.log('success: ', response);
+                    buildNews(response, (data.username === getCookie('username')));
                 });
         };
         getNews();
 
         let getProfile = () => {
             // fetch('https://news-websitex.herokuapp.com/api/news')
-            fetch('http://127.0.0.1:8000/api/getprofilebyusername/'+data.username, {
+            fetch('http://127.0.0.1:8000/api/getprofilebyusername/' + data.username, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': 'Token '+ localStorage.getItem('token')
+                    'Authorization': 'Token ' + localStorage.getItem('token')
                 },
             })
                 .then(res => res.json())
@@ -348,22 +318,43 @@
     };
 
 
-
-    let buildNews = (news) => {
+    let buildNews = (news, owner) => {
         let newsWrapper = document.getElementById('profile-news-wrapper');
 
+        console.log(owner);
         for (let i = 0; i < news.results.length; i++) {
             let newsItem = news.results[i];
 
             var date = new Date(newsItem.createDate);
 
-            let newsCard = `<div class="col-lg-4 col-md-6 col-sm-6">
+            let newsCard = owner ? `<div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="properties mb-30">
                         <div class="properties-card">
                             <div class="properties-img">
                                 <a href="news_details.html?id=${newsItem.newsID}"><img
                                         src="${newsItem.imageUrl}" alt=""></a>
-                                <div class="img-text">
+                                <div class="img-text" id="temp">
+                                    <span style="background: ${categoryColor(newsItem.newsClass)}">${newsItem.newsClass}</span>
+                                    <span style="background: #56675a">${newsItem.viewCounter}  <i class="fas fa-eye"></i></span>
+                                    <a href="edit_news.html?id=${newsItem.newsID}"><span style="background: #56675a"><i class="fas fa-edit"></i></span></a>
+                                </div>
+                            </div>
+                            <div class="properties-caption">
+                                <h3><a href="news_details.html?id=${newsItem.newsID}">${newsItem.newsTitle}</a>
+                                </h3>
+                                <p>${date.getDate()} ${date.toLocaleString('default', {month: 'short'})} ${date.getFullYear()}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>`
+                :
+                `<div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="properties mb-30">
+                        <div class="properties-card">
+                            <div class="properties-img">
+                                <a href="news_details.html?id=${newsItem.newsID}"><img
+                                        src="${newsItem.imageUrl}" alt=""></a>
+                                <div class="img-text" id="temp">
                                     <span style="background: ${categoryColor(newsItem.newsClass)}">${newsItem.newsClass}</span>
                                     <span style="background: #56675a">${newsItem.viewCounter}  <i class="fas fa-eye"></i></span>
                                 </div>
@@ -372,11 +363,11 @@
                                 <h3><a href="news_details.html?id=${newsItem.newsID}">${newsItem.newsTitle}</a>
                                 </h3>
                                 <p>${date.getDate()} ${date.toLocaleString('default', {month: 'short'})} ${date.getFullYear()}</p>
-                                <p style="font-size: xx-small">${newsItem.newsID}</p>
                             </div>
                         </div>
                     </div>
                 </div>`;
+
 
             newsWrapper.innerHTML += newsCard;
 
@@ -389,42 +380,41 @@
     let buildProfile = (news, username) => {
         let newsWrapper = document.getElementById('profile-details-wrapper');
 
-            let newsItem = news;
+        let newsItem = news;
 
-            var joinDate = new Date(newsItem.date_joined);
-            var lastLogin = new Date(newsItem.last_login);
+        var joinDate = new Date(newsItem.date_joined);
+        var lastLogin = new Date(newsItem.last_login);
 
-            let newsCard = `
+        let newsCard = `
                 <div class="profile-img">
                     <a href="news_details.html"><img
-                            src="https://en.africatopsports.com/wp-content/uploads/2021/12/UEFA-Champions-league-1.jpg" width="100" alt=""></a>
+                            src=${newsItem.imageUrl}"" width="100" alt=""></a>
                 </div>
                 <div class="properties-caption">
                     <h3>${newsItem.first_name} ${newsItem.last_name}</h3>
                     <p>@${username}</p>
+                    <p>bio :<br>${newsItem.bio}</p>
                     <p>favorite category :<br>${newsItem.userCategory}</p>
+                    <p>news count :<br>${newsItem.newsCount}</p>
                     <p>join date :<br>${joinDate.getDate()} ${joinDate.toLocaleString('default', {month: 'short'})} ${joinDate.getFullYear()}</p>
                     <p>last online :<br>${lastLogin.getDate()} ${lastLogin.toLocaleString('default', {month: 'short'})} ${lastLogin.getFullYear()} ${lastLogin.toLocaleTimeString()}</p>
                 </div>`;
 
-            newsWrapper.innerHTML += newsCard;
-
-
-
+        newsWrapper.innerHTML += newsCard;
 
 
     };
 
 
 </script>
-<script src="assets/js/popper.min.js+bootstrap.min.js.pagespeed.jc.-Z5m6ljAND.js"></script>
+<script src="js/popper.min.js+bootstrap.min.js.pagespeed.jc.-Z5m6ljAND.js"></script>
 <script>eval(mod_pagespeed_aaYokwErtx);</script>
 <script>eval(mod_pagespeed_gMJAcNlmbI);</script>
 
-<script src="assets/js/owl.carousel.min.js+slick.min.js.pagespeed.jc.F6wXCct6U2.js"></script>
+<script src="js/owl.carousel.min.js+slick.min.js.pagespeed.jc.F6wXCct6U2.js"></script>
 <script>eval(mod_pagespeed_KlLvOZN8Fy);</script>
 <script>eval(mod_pagespeed_$TEYNsEnUF);</script>
-<script src="assets/js/lightslider.min.js+jquery.slicknav.min.js+wow.min.js+jquery.js"></script>
+<script src="js/lightslider.min.js+jquery.slicknav.min.js+wow.min.js+jquery.js"></script>
 <script>eval(mod_pagespeed_SsjX9wl8YK);</script>
 <script>eval(mod_pagespeed_FsFY_1b99X);</script>
 
@@ -433,7 +423,7 @@
 <script>eval(mod_pagespeed_ACR6aNIQJ0);</script>
 
 <script>eval(mod_pagespeed_l3DmqqKHpk);</script>
-<script src="assets/js/jquery.form.js+jquery.validate.min.js+mail-script.js+jquery.js"></script>
+<script src="js/jquery.form.js+jquery.validate.min.js+mail-script.js+jquery.js"></script>
 <script>eval(mod_pagespeed_Tz7N8H_GxJ);</script>
 <script>eval(mod_pagespeed_eCe2npfiIC);</script>
 <script>eval(mod_pagespeed_IEpshS3M$A);</script>
@@ -442,21 +432,5 @@
 <script>eval(mod_pagespeed_Xuk2NU2Nkf);</script>
 <script>eval(mod_pagespeed_$TGHfHB1G2);</script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'UA-23581568-13');
-</script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
-        integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
-        data-cf-beacon='{"rayId":"6c5212007e604a91","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.12.0","si":100}'
-        crossorigin="anonymous"></script>
 </body>
 </html>

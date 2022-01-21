@@ -1,4 +1,4 @@
-const guestToken = 'bffc91cb8c198086615c963da09f317f5380e71a';
+const guestToken = 'c52d27a6b6608a64250ca46a75e29a861c3f037e';
 
 function isLogin(){
     return localStorage.getItem('token') !== '' && localStorage.getItem('token') !== guestToken;
@@ -156,6 +156,7 @@ function categoryColor(category) {
         case 'Health': return "#5effa8";
         case 'Economics': return "#d0f";
         case 'Sport': return "#073036";
+        case '،Technology': return "#7e4e52";
     }
 }
 

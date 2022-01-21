@@ -2,14 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="369e783a-eb2c-4a0b-8097-036a1cf7ad34" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/edit_news.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/customAlert.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/add_news.html" beforeDir="false" afterPath="$PROJECT_DIR$/add_news.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/black_image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/news-slider1.jpg.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/news-slider2.jpg.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/news-slider3.jpg.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xinstra1.jpg.pagespeed.ic.GSgh8nonyi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xinstra2.jpg.pagespeed.ic.iIVHYx2eh_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xinstra3.jpg.pagespeed.ic.oTeFcXfFju.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xinstra4.jpg.pagespeed.ic.Ef5JSlPEeo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xinstra5.jpg.pagespeed.ic.JHj6wXPmAJ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xinstra6.jpg.pagespeed.ic.9UmKYcdNvC.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xnews-slider1.jpg.pagespeed.ic.LX3NX1JjfZ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xnews-slider2.jpg.pagespeed.ic.Cg2Yyk99pW.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xnews-slider3.jpg.pagespeed.ic.uf0gnOXiLR.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xtechnology1.jpg.pagespeed.ic.xVTv00fTps.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xtechnology2.jpg.pagespeed.ic.IQWSoVOfaw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xtechnology3.jpg.pagespeed.ic.td0VUMyPUK.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xtechnology4.jpg.pagespeed.ic.2PHTM2jqx6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xtrending1.jpg.pagespeed.ic.BIcMmi61Jx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xtrending2.jpg.pagespeed.ic.bflsAlrGc8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xtrending3.jpg.pagespeed.ic.rBNaL6BhJG.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xtrending4.jpg.pagespeed.ic.uyfP7nzjyE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xtrending5.jpg.pagespeed.ic.PmcMJTelyI.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xtrending6.jpg.pagespeed.ic.sq3Z2AFpAW.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xwhats_news_details1.jpg.pagespeed.ic.BWRVMiIQmD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xwhats_right_img1.jpg.pagespeed.ic.FJ-uCSOJ74.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xwhats_right_img2.jpg.pagespeed.ic.qLffu61H7j.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/gallery/xwhats_right_img3.jpg.pagespeed.ic.a94s8k4BcJ.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/hero/xslide1.jpg.pagespeed.ic.IYtBJsX_Mt.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/hero/xslide2.jpg.pagespeed.ic.cWjKkcTiXR.webp" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/welcome-header.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/hero/xslide3.jpg.pagespeed.ic.Gue_MCCNHY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/jquery.form.js+jquery.validate.min.js+mail-script.js+jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.form.js+jquery.validate.min.js+mail-script.js+jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/lightslider.min.js+jquery.slicknav.min.js+wow.min.js+jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/lightslider.min.js+jquery.slicknav.min.js+wow.min.js+jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/owl.carousel.min.js+slick.min.js.pagespeed.jc.F6wXCct6U2.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/owl.carousel.min.js+slick.min.js.pagespeed.jc.F6wXCct6U2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/popper.min.js+bootstrap.min.js.pagespeed.jc.-Z5m6ljAND.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/popper.min.js+bootstrap.min.js.pagespeed.jc.-Z5m6ljAND.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/vendor/jquery-1.12.4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/vendor/jquery-1.12.4.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/vendor/modernizr-3.5.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/vendor/modernizr-3.5.0.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/news_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/news_details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saved.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/search_screen.html" beforeDir="false" afterPath="$PROJECT_DIR$/search_screen.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/setting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sin-up.html" beforeDir="false" afterPath="$PROJECT_DIR$/sign-up.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,11 +95,11 @@
       <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\img\gallery" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\js" />
+      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\css" />
+      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\img" />
       <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2" />
       <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\img\hero" />
-      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\img\gallery" />
-      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\css" />
-      <recent name="C:\Users\Ali Yousefi\WebstormProjects\untitled2\assets\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -89,7 +138,8 @@
       <workItem from="1641868607763" duration="12971000" />
       <workItem from="1641968489094" duration="59455000" />
       <workItem from="1642306177620" duration="44123000" />
-      <workItem from="1642580204327" duration="11569000" />
+      <workItem from="1642580204327" duration="46053000" />
+      <workItem from="1642765986803" duration="3652000" />
     </task>
     <task id="LOCAL-00001" summary="category, profile, search, news detail completed">
       <created>1642407169405</created>
@@ -98,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642407169405</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add news completed">
+      <created>1642596235199</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1642596235200</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +176,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="category, profile, search, news detail completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="category, profile, search, news detail completed" />
+    <MESSAGE value="add news completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="add news completed" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/add_news.html</url>
+          <line>224</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

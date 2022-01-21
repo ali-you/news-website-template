@@ -6,25 +6,25 @@
 
 .boxed-btn {
     background: #fff;
-    color: #f0d !important;
+    color: #1f4365 !important;
     display: inline-block;
     padding: 18px 44px;
     font-family: "DM Sans", sans-serif;
     font-size: 14px;
     font-weight: 400;
     border: 0;
-    border: 1px solid #f0d;
+    border: 1px solid #1f4365;
     letter-spacing: 3px;
     text-align: center;
-    color: #f0d;
+    color: #1f4365;
     text-transform: uppercase;
     cursor: pointer
 }
 
 .boxed-btn:hover {
-    background: #f0d;
+    background: #1f4365;
     color: #fff !important;
-    border: 1px solid #f0d
+    border: 1px solid #1f4365
 }
 
 .boxed-btn:focus {
@@ -213,7 +213,7 @@ li {
 }
 
 #back-top {
-    background: #f0d;
+    background: #1f4365;
     height: 50px;
     width: 50px;
     right: 31px;
@@ -414,7 +414,7 @@ li {
 }
 
 .section-tittle a {
-    color: #f0d;
+    color: #1f4365;
     font-family: "DM Sans", sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -453,7 +453,7 @@ li {
 }
 
 .btn {
-    background: #f0d;
+    background: #1f4365;
     font-family: "DM Sans", sans-serif;
     text-transform: inherit !important;
     padding: 30px 43px;
@@ -506,7 +506,7 @@ li {
 }
 
 .header-btn {
-    color: #f0d !important;
+    color: #1f4365 !important;
     background: rgba(255, 0, 221, .1);
     font-family: "DM Sans", sans-serif !important;
     text-transform: capitalize !important;
@@ -535,7 +535,7 @@ li {
 
 .submit-btn {
     width: 100%;
-    background: #f0d;
+    background: #1f4365;
     font-family: "DM Sans", sans-serif;
     text-transform: inherit !important;
     padding: 30px 43px;
@@ -595,7 +595,7 @@ li {
 }
 
 .submit-btn2 {
-    background: #f0d;
+    background: #1f4365;
     width: 100%;
     height: 50px;
     padding: 10px 20px;
@@ -610,8 +610,8 @@ li {
 }
 
 .btn_1 {
-    background-color: #f0d;
-    border: 1px solid #f0d;
+    background-color: #1f4365;
+    border: 1px solid #1f4365;
     color: #fff !important;
     display: inline-block;
     padding: 16px 41px;
@@ -623,8 +623,8 @@ li {
 
 .btn_1:hover {
     background-color: #fff;
-    border: 1px solid #f0d;
-    color: #f0d !important
+    border: 1px solid #1f4365;
+    color: #1f4365 !important
 }
 
 .btn.focus, .btn:focus {
@@ -763,7 +763,7 @@ li {
 }
 
 .header-area .header-top .header-info-right ul li a:hover {
-    color: #f0d
+    color: #1f4365
 }
 
 .header-area .header-top .header-info-right ul li .search-form {
@@ -793,7 +793,7 @@ li {
 }
 
 .header-area .header-top .header-info-right ul li .search-form input {
-    color: #f0d;
+    color: #1f4365;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -808,7 +808,7 @@ li {
 
 .header-area .header-top .header-info-right ul li .search-form input:focus {
     background-color: transparent;
-    border-bottom: 1px solid #f0d;
+    border-bottom: 1px solid #1f4365;
     border-radius: 0;
     padding-left: 30px;
     background-position: 5px 7px;
@@ -860,7 +860,7 @@ li {
 }
 
 .header-area .header-top .header-info-right ul li ul.multipage > li > a:hover {
-    color: #f0d;
+    color: #1f4365;
     background: none;
     letter-spacing: 1px
 }
@@ -872,7 +872,7 @@ li {
 }
 
 .header-bottom {
-    background: #f0d
+    background: #1f4365
 }
 
 .header-bottom .main-menu ul li {
@@ -958,7 +958,7 @@ li {
 }
 
 .header-social a:hover {
-    color: #f0d
+    color: #1f4365
 }
 
 .header-social a:hover i {
@@ -1157,7 +1157,7 @@ li {
 }
 
 .popular-item-area .slider-caption p a {
-    color: #f0d
+    color: #1f4365
 }
 
 .popular-item .owl-nav div {
@@ -1175,7 +1175,7 @@ li {
 }
 
 .popular-item .owl-nav div i {
-    color: #f0d;
+    color: #1f4365;
     font-size: 16px
 }
 
@@ -1198,7 +1198,7 @@ li {
 }
 
 .popular-item .owl-nav div:hover {
-    background: #f0d
+    background: #1f4365
 }
 
 .popular-item .owl-nav div:hover i {
@@ -1277,14 +1277,14 @@ li {
 }
 
 .whats-news-area .nav-tabs .nav-link.active {
-    color: #f0d;
-    border-bottom: 4px solid #f0d
+    color: #1f4365;
+    border-bottom: 4px solid #1f4365
 }
 
 .whats-news-area .nav-tabs .nav-link:hover {
-    border-bottom: 4px solid #f0d;
+    border-bottom: 4px solid #1f4365;
     letter-spacing: 0 !important;
-    color: #f0d
+    color: #1f4365
 }
 
 .whats-news-area .tab-pane {
@@ -1372,7 +1372,7 @@ li {
 }
 
 .whats-right-single .whats-right-cap h4 a:hover {
-    color: #f0d
+    color: #1f4365
 }
 
 .whats-right-single .whats-right-cap p {
@@ -1382,7 +1382,7 @@ li {
 }
 
 .whats-right-single .whats-right-cap p a {
-    color: #f0d
+    color: #1f4365
 }
 
 .single-slider .trending-top .trend-top-img {
@@ -1454,7 +1454,7 @@ li {
 }
 
 .single-slider .trending-top .trend-top-img .trend-top-cap h2 a:hover {
-    color: #f0d
+    color: #1f4365
 }
 
 .single-slider .trending-top .trend-top-img .trend-top-cap p {
@@ -1463,7 +1463,7 @@ li {
 }
 
 .single-slider .trending-top .trend-top-img .trend-top-cap p a {
-    color: #f0d
+    color: #1f4365
 }
 
 .tranding-area .trending .trend-top-img {
@@ -1523,7 +1523,7 @@ li {
 }
 
 .tranding-area .trending .trend-top-img .trend-top-cap h2 a:hover {
-    color: #f0d
+    color: #1f4365
 }
 
 .tranding-area .trending .trend-top-img .trend-top-cap p {
@@ -1533,7 +1533,7 @@ li {
 }
 
 .tranding-area .trending .trend-top-img .trend-top-cap p a {
-    color: #f0d
+    color: #1f4365
 }
 
 .tranding-area .properties .properties-card {
@@ -1600,12 +1600,12 @@ li {
 }
 
 .tranding-area .properties .properties-card .properties-caption h3 a:hover, .tranding-area .properties .properties-card .properties-caption h3 .properties-card {
-    color: #f0d;
+    color: #1f4365;
     text-decoration: underline
 }
 
 .tranding-area .properties .properties-card .properties-caption P a {
-    color: #f0d;
+    color: #1f4365;
     font-size: 16px
 }
 
@@ -1651,12 +1651,12 @@ li {
 }
 
 .technology-area .technology-post .technology-wrapper .properties-caption h3 a:hover, .technology-area .technology-post .technology-wrapper .properties-caption h3 .technology-wrapper {
-    color: #f0d;
+    color: #1f4365;
     text-decoration: underline
 }
 
 .technology-area .technology-post .technology-wrapper .properties-caption P a {
-    color: #f0d;
+    color: #1f4365;
     font-size: 16px
 }
 
@@ -2069,7 +2069,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .footer-area .footer-tittle ul li a:hover {
-    color: #f0d;
+    color: #1f4365;
     padding-left: 5px
 }
 
@@ -2104,7 +2104,7 @@ input:focus::-webkit-input-placeholder {
     border: 0;
     cursor: pointer;
     padding: 13px 22px;
-    background: #f0d;
+    background: #1f4365;
     line-height: 1;
     width: 100%;
     display: block;
@@ -2113,7 +2113,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .footer-area .info.error {
-    color: #f0d
+    color: #1f4365
 }
 
 .footer-bottom-area .footer-border {
@@ -2129,11 +2129,11 @@ input:focus::-webkit-input-placeholder {
 }
 
 .footer-bottom-area .footer-copy-right p i {
-    color: #f0d
+    color: #1f4365
 }
 
 .footer-bottom-area .footer-copy-right p a {
-    color: #f0d
+    color: #1f4365
 }
 
 .footer-social a {
@@ -2151,7 +2151,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .footer-social a:hover {
-    color: #f0d
+    color: #1f4365
 }
 
 .footer-social a:hover i {
@@ -2285,7 +2285,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .register-form-area .register-form .register-footer p a {
-    color: #f0d
+    color: #1f4365
 }
 
 .login-form-area .login-form {
@@ -2397,7 +2397,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .login-form-area .login-form .login-footer p a {
-    color: #f0d
+    color: #1f4365
 }
 
 .login-check {
@@ -2453,20 +2453,20 @@ input:focus::-webkit-input-placeholder {
 }
 
 .login-check input[type="checkbox"]:checked + label:before {
-    background-color: #f0d;
-    border-color: #f0d;
+    background-color: #1f4365;
+    border-color: #1f4365;
     color: #fff;
     line-height: 18px
 }
 
 .login-check a {
-    color: #f0d;
+    color: #1f4365;
     font-size: 14px;
     font-weight: 400
 }
 
 .login-check a:hover {
-    color: #f0d
+    color: #1f4365
 }
 
 @media (max-width: 575px) {
@@ -2576,7 +2576,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .blog_area a:hover, .blog_area a :hover {
-    background: -webkit-linear-gradient(131deg, #f0d 0%, #f0d 99%);
+    background: -webkit-linear-gradient(131deg, #1f4365 0%, #1f4365 99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
@@ -2607,7 +2607,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .blog_details a:hover {
-    color: #f0d
+    color: #1f4365
 }
 
 .blog_details h2 {
@@ -2664,7 +2664,7 @@ input:focus::-webkit-input-placeholder {
     left: 10px;
     display: block;
     color: #fff;
-    background-color: #f0d;
+    background-color: #1f4365;
     padding: 8px 15px;
     border-radius: 5px
 }
@@ -2746,7 +2746,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .blog_right_sidebar .search_widget .input-group button {
-    background: #f0d;
+    background: #1f4365;
     border-left: 0;
     border: 1px solid #f0e9ff;
     padding: 4px 15px;
@@ -2863,7 +2863,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-    background: #f0d;
+    background: #1f4365;
     color: #fff !important;
     -webkit-text-fill-color: #fff;
     text-decoration: none;
@@ -3045,7 +3045,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .single-post-area .blog-author a:hover {
-    color: #f0d
+    color: #1f4365
 }
 
 .single-post-area .blog-author p {
